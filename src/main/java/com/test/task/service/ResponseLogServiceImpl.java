@@ -47,7 +47,7 @@ public class ResponseLogServiceImpl implements ResponseLogService {
         responseLog.setRemoteId(response.getRemoteId());
         responseLog.setData(response.getData());
         responseLog.setStatus(response.getStatus());
-        responseLog.setMessage(responseLog.getMessage());
+        responseLog.setMessage(response.getMessage());
         return responseLog;
     }
 }
