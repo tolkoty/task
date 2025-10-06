@@ -1,5 +1,6 @@
 package com.test.task.model;
 
+import com.test.task.persistence.ResponseLogEntityListener;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,6 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @Table(name = "response_log")
+@EntityListeners(ResponseLogEntityListener.class)
 @NoArgsConstructor
 public class ResponseLog {
 
